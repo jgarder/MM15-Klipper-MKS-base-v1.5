@@ -49,6 +49,7 @@ SHAPER_CALIBRATE
 TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=0.05 #this test will test retract length from 0 to 5 on a 20mm tower
 
 ##sources
+[ramps pinout for mks 1.5](https://github.com/makerbase-mks/Klipper-for-MKS-Boards/tree/main/MKS%20Gen%20l)
 1. [copied a lot from this](https://www.reddit.com/r/coreception/comments/peyx17/fluidd_config_for_klipper_guide_and_also_just/)
 
 2. [beanisfat leaves a comment i use](https://www.reddit.com/r/coreception/comments/nhtl3p/klipper_tmc2208_config_for_stock_printer/)
