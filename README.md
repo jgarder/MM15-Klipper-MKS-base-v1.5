@@ -1,14 +1,13 @@
-# Coreception-Klipper0.10.0
+# Mendelmax 1.5 With MKS base v1.5 (RAMPS 1.4) -Klipper0.10.0
  sainsmart Coreception 300  with Klipper. This will hold general installation and config
 
-1. Get Coreception (or any robin nano printer) and setup with Bltouch in mtl detector 2 spot according to pic. 
-2. get raspberryPI (LOL)
-3. install OS (i chose FluiddOS which is just debian with klipper/mainsail/moonraker preinstalled)
-4. compile klipper for your mcu which should be a MKS Robin Nano (v1.2.004) board on stock coreception. 
-5. run "make menuconfig", setup for the mcu STM32F103, enable "extra low-level configuration setup", select the 28KiB bootloader, and serial (on USART3 PB11/PB10) communication.
+1. Get printer and setup with Bltouch in Z+ endstop spot . 
+2. get Debian Pc/laptop/rpi/orangepi/ect/ect
+3. install OS (i chose debian 11 and used KIAUH to install klipper/mainsail/moonraker)
+4. compile klipper for your mcu which should be a mega 2450 board on stock coreception. 
+5. run "make menuconfig", setup for the mcu mega, stock settings work great. 
 6. run "make"
-7. "make flash" does not work with MKS Robin,run the following command: ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano35.bin Copy the file out/Robin_nano35.bin to an SD card and then restart the printer with that SD card.
-
+7. "make flash" works fine. upload to board if you have USB setup. 
 8. copy over printer.cfg which contains all pinouts to control printer as well as macros for calibration and setup
 9. [if your using ubuntu and cannot find your MCU path](https://unix.stackexchange.com/a/674936)
 9. [verify all printer components and tune extruder/Bed PID](https://github.com/Klipper3d/klipper/blob/master/docs/Config_checks.md) 
